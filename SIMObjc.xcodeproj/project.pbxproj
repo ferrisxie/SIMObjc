@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80CEFD9C8672CE892E2631BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8AFDDDD14F2EE9A5228A84 /* libPods.a */; };
+		ED19471F1CB506CB00ECE72F /* SIMDBHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ED19471E1CB506CB00ECE72F /* SIMDBHandler.m */; };
+		ED1947221CB5104F00ECE72F /* SIMNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1947211CB5104F00ECE72F /* SIMNetworkHandler.m */; };
+		ED1947251CB5110C00ECE72F /* SIMMasterIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */; };
+		ED1947281CB5322400ECE72F /* SIMMasterDataSouce.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1947271CB5322400ECE72F /* SIMMasterDataSouce.m */; };
+		ED19472C1CB5323F00ECE72F /* SIMMasterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED19472B1CB5323F00ECE72F /* SIMMasterDelegate.m */; };
 		ED70F00B1CB3F86F00CE8B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F00A1CB3F86F00CE8B55 /* main.m */; };
 		ED70F00E1CB3F86F00CE8B55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F00D1CB3F86F00CE8B55 /* AppDelegate.m */; };
-		ED70F0111CB3F86F00CE8B55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F0101CB3F86F00CE8B55 /* ViewController.m */; };
 		ED70F0141CB3F86F00CE8B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED70F0121CB3F86F00CE8B55 /* Main.storyboard */; };
 		ED70F0161CB3F86F00CE8B55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED70F0151CB3F86F00CE8B55 /* Images.xcassets */; };
 		ED70F0191CB3F86F00CE8B55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED70F0171CB3F86F00CE8B55 /* LaunchScreen.xib */; };
 		ED70F0251CB3F86F00CE8B55 /* SIMObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F0241CB3F86F00CE8B55 /* SIMObjcTests.m */; };
+		ED70F0351CB4F58200CE8B55 /* SIMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F0341CB4F58200CE8B55 /* SIMMasterViewController.m */; };
+		ED7BE0941CB64A660025DB30 /* SIMSubIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */; };
+		ED9D66791CB7DFDE008C0A64 /* SIMMasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +35,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C8AFDDDD14F2EE9A5228A84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C6635883309D0621E14B4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ED19471D1CB506CB00ECE72F /* SIMDBHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMDBHandler.h; sourceTree = "<group>"; };
+		ED19471E1CB506CB00ECE72F /* SIMDBHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMDBHandler.m; sourceTree = "<group>"; };
+		ED1947201CB5104F00ECE72F /* SIMNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMNetworkHandler.h; sourceTree = "<group>"; };
+		ED1947211CB5104F00ECE72F /* SIMNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMNetworkHandler.m; sourceTree = "<group>"; };
+		ED1947231CB5110C00ECE72F /* SIMMasterIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterIssueModel.h; sourceTree = "<group>"; };
+		ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterIssueModel.m; sourceTree = "<group>"; };
+		ED1947261CB5322400ECE72F /* SIMMasterDataSouce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterDataSouce.h; sourceTree = "<group>"; };
+		ED1947271CB5322400ECE72F /* SIMMasterDataSouce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterDataSouce.m; sourceTree = "<group>"; };
+		ED19472A1CB5323F00ECE72F /* SIMMasterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterDelegate.h; sourceTree = "<group>"; };
+		ED19472B1CB5323F00ECE72F /* SIMMasterDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterDelegate.m; sourceTree = "<group>"; };
 		ED70F0051CB3F86F00CE8B55 /* SIMObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIMObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70F0091CB3F86F00CE8B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED70F00A1CB3F86F00CE8B55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED70F00C1CB3F86F00CE8B55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED70F00D1CB3F86F00CE8B55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED70F00F1CB3F86F00CE8B55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED70F0101CB3F86F00CE8B55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ED70F0131CB3F86F00CE8B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED70F0151CB3F86F00CE8B55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED70F0181CB3F86F00CE8B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ED70F01E1CB3F86F00CE8B55 /* SIMObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIMObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED70F0231CB3F86F00CE8B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED70F0241CB3F86F00CE8B55 /* SIMObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMObjcTests.m; sourceTree = "<group>"; };
+		ED70F02E1CB3F95900CE8B55 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		ED70F02F1CB3F98300CE8B55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ED70F0331CB4F58200CE8B55 /* SIMMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterViewController.h; sourceTree = "<group>"; };
+		ED70F0341CB4F58200CE8B55 /* SIMMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterViewController.m; sourceTree = "<group>"; };
+		ED7BE0921CB64A660025DB30 /* SIMSubIssueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMSubIssueModel.h; sourceTree = "<group>"; };
+		ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMSubIssueModel.m; sourceTree = "<group>"; };
+		ED9D66771CB7DFDE008C0A64 /* SIMMasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterTableViewCell.h; sourceTree = "<group>"; };
+		ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80CEFD9C8672CE892E2631BD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +88,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12D5468F18CA2B466C7C655B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */,
+				C5C6635883309D0621E14B4A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB306803CCB3955F8CC1A791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C8AFDDDD14F2EE9A5228A84 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED19471C1CB5062000ECE72F /* catagory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = catagory;
+			sourceTree = "<group>";
+		};
+		ED1947291CB5322800ECE72F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				ED1947261CB5322400ECE72F /* SIMMasterDataSouce.h */,
+				ED1947271CB5322400ECE72F /* SIMMasterDataSouce.m */,
+				ED19472A1CB5323F00ECE72F /* SIMMasterDelegate.h */,
+				ED19472B1CB5323F00ECE72F /* SIMMasterDelegate.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
 		ED70EFFC1CB3F86F00CE8B55 = {
 			isa = PBXGroup;
 			children = (
+				ED70F02E1CB3F95900CE8B55 /* UtilsMacro.h */,
 				ED70F0071CB3F86F00CE8B55 /* SIMObjc */,
 				ED70F0211CB3F86F00CE8B55 /* SIMObjcTests */,
 				ED70F0061CB3F86F00CE8B55 /* Products */,
+				12D5468F18CA2B466C7C655B /* Pods */,
+				DB306803CCB3955F8CC1A791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +147,12 @@
 		ED70F0071CB3F86F00CE8B55 /* SIMObjc */ = {
 			isa = PBXGroup;
 			children = (
+				ED19471C1CB5062000ECE72F /* catagory */,
 				ED70F00C1CB3F86F00CE8B55 /* AppDelegate.h */,
 				ED70F00D1CB3F86F00CE8B55 /* AppDelegate.m */,
-				ED70F00F1CB3F86F00CE8B55 /* ViewController.h */,
-				ED70F0101CB3F86F00CE8B55 /* ViewController.m */,
+				ED70F0321CB3FA1B00CE8B55 /* view */,
+				ED70F0311CB3FA1200CE8B55 /* controller */,
+				ED70F0301CB3F9F900CE8B55 /* model */,
 				ED70F0121CB3F86F00CE8B55 /* Main.storyboard */,
 				ED70F0151CB3F86F00CE8B55 /* Images.xcassets */,
 				ED70F0171CB3F86F00CE8B55 /* LaunchScreen.xib */,
@@ -97,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				ED70F0091CB3F86F00CE8B55 /* Info.plist */,
+				ED70F02F1CB3F98300CE8B55 /* PrefixHeader.pch */,
 				ED70F00A1CB3F86F00CE8B55 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -119,6 +188,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED70F0301CB3F9F900CE8B55 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ED1947291CB5322800ECE72F /* TableView */,
+				ED19471D1CB506CB00ECE72F /* SIMDBHandler.h */,
+				ED19471E1CB506CB00ECE72F /* SIMDBHandler.m */,
+				ED1947201CB5104F00ECE72F /* SIMNetworkHandler.h */,
+				ED1947211CB5104F00ECE72F /* SIMNetworkHandler.m */,
+				ED1947231CB5110C00ECE72F /* SIMMasterIssueModel.h */,
+				ED7BE0921CB64A660025DB30 /* SIMSubIssueModel.h */,
+				ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */,
+				ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ED70F0311CB3FA1200CE8B55 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED70F0331CB4F58200CE8B55 /* SIMMasterViewController.h */,
+				ED70F0341CB4F58200CE8B55 /* SIMMasterViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		ED70F0321CB3FA1B00CE8B55 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ED9D66771CB7DFDE008C0A64 /* SIMMasterTableViewCell.h */,
+				ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED70F0281CB3F86F00CE8B55 /* Build configuration list for PBXNativeTarget "SIMObjc" */;
 			buildPhases = (
+				69DB444E83AFEE08D4584700 /* Check Pods Manifest.lock */,
 				ED70F0011CB3F86F00CE8B55 /* Sources */,
 				ED70F0021CB3F86F00CE8B55 /* Frameworks */,
 				ED70F0031CB3F86F00CE8B55 /* Resources */,
+				30862A12B1ED41A6ED250A4F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +319,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30862A12B1ED41A6ED250A4F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69DB444E83AFEE08D4584700 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED70F0011CB3F86F00CE8B55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED70F0111CB3F86F00CE8B55 /* ViewController.m in Sources */,
+				ED1947281CB5322400ECE72F /* SIMMasterDataSouce.m in Sources */,
+				ED7BE0941CB64A660025DB30 /* SIMSubIssueModel.m in Sources */,
+				ED70F0351CB4F58200CE8B55 /* SIMMasterViewController.m in Sources */,
+				ED1947251CB5110C00ECE72F /* SIMMasterIssueModel.m in Sources */,
+				ED1947221CB5104F00ECE72F /* SIMNetworkHandler.m in Sources */,
 				ED70F00E1CB3F86F00CE8B55 /* AppDelegate.m in Sources */,
+				ED19471F1CB506CB00ECE72F /* SIMDBHandler.m in Sources */,
+				ED9D66791CB7DFDE008C0A64 /* SIMMasterTableViewCell.m in Sources */,
+				ED19472C1CB5323F00ECE72F /* SIMMasterDelegate.m in Sources */,
 				ED70F00B1CB3F86F00CE8B55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,9 +490,13 @@
 		};
 		ED70F0291CB3F86F00CE8B55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,9 +504,13 @@
 		};
 		ED70F02A1CB3F86F00CE8B55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C6635883309D0621E14B4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +569,7 @@
 				ED70F02A1CB3F86F00CE8B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED70F02B1CB3F86F00CE8B55 /* Build configuration list for PBXNativeTarget "SIMObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +578,7 @@
 				ED70F02D1CB3F86F00CE8B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

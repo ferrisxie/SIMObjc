@@ -7,16 +7,55 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SIMMasterViewController.h"
+#import "SIMDBHandler.h"
+#import <MBProgressHUD.h>
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+#pragma mark - application cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    SIMMasterViewController* masterController = [SIMMasterViewController new];
+    
+    //设置navigationBar
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:masterController];
+    navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setOpaque:YES];
+    navigationController.navigationBar.barTintColor = mainColor;
+    [navigationController.navigationBar setTitleTextAttributes:
+    [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,mainFont, NSFontAttributeName,nil]];;
+    [navigationController.navigationBar setNeedsLayout];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
+    //判断是否第一次进入
+    NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
+   if (![[userDefault objectForKey:@"firstFlag"] boolValue]) {
+        //是第一次 执行初始化操作
+        MBProgressHUD* progress = [[MBProgressHUD alloc] initWithWindow:self.window];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            progress.labelFont = mainFont;
+            progress.labelText = @"初始化...";
+            [progress show:YES];
+        });
+        [[SIMDBHandler shareDBHandler] createTableOnFirstLoadWithComletitionHandler:^(BOOL success, NSError *error) {
+            if (success) {
+                [progress hide:YES];
+                [userDefault setBool:YES forKey:@"firstFlag"];
+            }
+            else
+            {
+                NSLog(@"%@",error);
+            }
+        }];
+        
+   }
     return YES;
 }
 

@@ -1,0 +1,7 @@
+platform:ios,'8.0'
+pod 'FMDB', '~> 2.5'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'SDWebImage','~> 3.7.3'
+pod 'AFNetworking', '~> 2.5.4'
+pod 'MJRefresh', '~> 3.0.4'
+pod 'FLKAutoLayout', '~> 0.2.1'
