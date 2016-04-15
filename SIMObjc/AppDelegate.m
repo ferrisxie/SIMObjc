@@ -27,9 +27,10 @@
     navigationController.navigationBar.barStyle = UIBarStyleBlack;
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setOpaque:YES];
+    navigationController.navigationBar.tintColor = [UIColor whiteColor];
     navigationController.navigationBar.barTintColor = mainColor;
     [navigationController.navigationBar setTitleTextAttributes:
-    [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,mainFont, NSFontAttributeName,nil]];;
+    [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,[mainFont fontWithSize:17.0f], NSFontAttributeName,nil]];;
     [navigationController.navigationBar setNeedsLayout];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];

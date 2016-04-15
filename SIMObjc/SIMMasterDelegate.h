@@ -9,18 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface NSIndexPath (SIMConvinience)
-
-- (NSIndexPath*)associateIndexPath;
-- (void)setAssociateIndexPath:(NSIndexPath*)indexPath;
-
-@end
-
+typedef void(^SIMMasterSelectedHandler)(UITableView* tableView,NSIndexPath* indexPath);
 @interface SIMMasterDelegate : NSObject <UITableViewDelegate>
 @property (nonatomic,assign) NSArray* dataSouce;
 
--(instancetype)initWithDataSouce:(NSArray*)data;
-
+- (instancetype)initWithDataSouce:(NSArray *)data SelectedHandler:(SIMMasterSelectedHandler)handler;
 @end
 
 

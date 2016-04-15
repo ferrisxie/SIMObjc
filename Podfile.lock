@@ -20,14 +20,25 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - ARChromeActivity (1.0.0)
+  - ARSafariActivity (0.0.1)
   - FLKAutoLayout (0.2.1)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - JBWebViewController (1.0.8):
+    - ARChromeActivity (= 1.0.0)
+    - ARSafariActivity (= 0.0.1)
+    - NJKWebViewProgress (= 0.2.3)
   - MBProgressHUD (0.9.1)
   - MJRefresh (3.0.4)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -36,16 +47,21 @@ DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - FLKAutoLayout (~> 0.2.1)
   - FMDB (~> 2.5)
+  - JBWebViewController (~> 1.0.7)
   - MBProgressHUD (~> 0.9.1)
   - MJRefresh (~> 3.0.4)
   - SDWebImage (~> 3.7.3)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ARChromeActivity: 40d77445498fded9d32cbf4a41e8585766feffd6
+  ARSafariActivity: f2d5fb199772bc6dd78fcb2b5ea068d70f040847
   FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  JBWebViewController: fbec1603683f42a758bb632339b806205b1d8806
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJRefresh: c95f0d541606ef584dab3fbeda28f4f32b4aca6e
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.38.2

@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 @interface SIMMasterDataSouce : NSObject <UITableViewDataSource>
 
-@property(nonatomic,readonly,copy) NSArray* dataSource;
+@property(nonatomic,copy) NSArray* dataSource;
 
 
 -(instancetype)initWithData:(NSArray*)dataSouce;

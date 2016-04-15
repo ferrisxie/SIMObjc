@@ -181,4 +181,19 @@
     }
     handler([resutArray copy],YES,nil);
 }
+/**
+ *  清除数据
+ */
+-(void)deleteDBData
+{
+    NSString *docsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *dbPath   = [docsPath stringByAppendingPathComponent:@"sim_master.db"];
+    FMDatabase *db     = [FMDatabase databaseWithPath:dbPath];
+    [db open];
+    NSString* sql = @"delete from sim_master_cn";
+    [db executeUpdate:sql];
+    NSString* sql1 = @"delete from sim_issues_cn";
+    [db executeUpdate:sql1];
+    [db close];
+}
 @end

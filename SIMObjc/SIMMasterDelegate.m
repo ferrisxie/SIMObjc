@@ -12,21 +12,7 @@
 #import "SIMMasterTableViewCell.h"
 #import <objc/runtime.h>
 
-
-@implementation NSIndexPath (SIMConvinience)
-static char* SIMIndexPathKey = "SIMIndexPathKey";
-
--(NSIndexPath *)associateIndexPath
-{
-    
-    return objc_getAssociatedObject(self, SIMIndexPathKey);
-}
--(void)setAssociateIndexPath:(NSIndexPath *)indexPath
-{
-    objc_setAssociatedObject(self, SIMIndexPathKey, indexPath, OBJC_ASSOCIATION_COPY);
-}
-
-@end
+#import "SIMSubIssueTableViewCell.h"
 
 @interface SIMMasterDelegate()
 
@@ -40,6 +26,7 @@ static char* SIMIndexPathKey = "SIMIndexPathKey";
     //时候展开状态
     BOOL _isShowIssues;
     NSIndexPath* _willSelectIndexPath;
+    SIMMasterSelectedHandler _selectedHandler;
 }
 @end
 
@@ -54,7 +41,8 @@ static char* SIMIndexPathKey = "SIMIndexPathKey";
 {
     return 0.00001f;
 }
--(instancetype)initWithDataSouce:(NSArray *)data
+
+-(instancetype)initWithDataSouce:(NSArray *)data SelectedHandler:(SIMMasterSelectedHandler)handler
 {
     if (self= [super init]) {
         self.dataSouce = data;
@@ -62,17 +50,16 @@ static char* SIMIndexPathKey = "SIMIndexPathKey";
         _lastSelectMatserIndexPath = nil;
         _lastModelIssuesCount = 0;
         _isSelectSubCell = NO;
+        _selectedHandler = handler;
     }
     return  self;
 }
-
 
 //每次点击都deselect导致indexPath变化！！！
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-               NSLog(@"didSelectRowAtIndexPath");
     if ([cell isMemberOfClass:[SIMMasterTableViewCell class]]) {
         SIMMasterIssueModel* masterModel = [(SIMMasterTableViewCell*)cell model];
         if (masterModel.selectFlag) {
@@ -99,6 +86,12 @@ static char* SIMIndexPathKey = "SIMIndexPathKey";
         //展开后设置最后选中的indexPath
         _lastModelIssuesCount = masterModel.subIuuses.count;
         _lastSelectMatserIndexPath = [indexPath copy];
+    }
+    else if([cell isMemberOfClass:[SIMSubIssueTableViewCell class]])
+    {
+        if (_selectedHandler) {
+            _selectedHandler(tableView,indexPath);
+        }
     }
     
 }
@@ -136,7 +129,6 @@ static char* SIMIndexPathKey = "SIMIndexPathKey";
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-    //     NSLog(@"deselect %@,row:%ld",[cell class],indexPath.row);
     if (cell) {
         //cell没有被销毁
         if ([cell isMemberOfClass:[SIMMasterTableViewCell class]]) {

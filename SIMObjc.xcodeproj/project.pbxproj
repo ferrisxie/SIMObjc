@@ -22,6 +22,8 @@
 		ED70F0351CB4F58200CE8B55 /* SIMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70F0341CB4F58200CE8B55 /* SIMMasterViewController.m */; };
 		ED7BE0941CB64A660025DB30 /* SIMSubIssueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */; };
 		ED9D66791CB7DFDE008C0A64 /* SIMMasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */; };
+		EDC903BC1CBF9C0400776DCD /* SIMSubIssueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC903BB1CBF9C0400776DCD /* SIMSubIssueTableViewCell.m */; };
+		EDC903C61CC08BBE00776DCD /* SIMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC903C51CC08BBE00776DCD /* SIMMoreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMSubIssueModel.m; sourceTree = "<group>"; };
 		ED9D66771CB7DFDE008C0A64 /* SIMMasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMasterTableViewCell.h; sourceTree = "<group>"; };
 		ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMasterTableViewCell.m; sourceTree = "<group>"; };
+		EDC903BA1CBF9C0400776DCD /* SIMSubIssueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMSubIssueTableViewCell.h; sourceTree = "<group>"; };
+		EDC903BB1CBF9C0400776DCD /* SIMSubIssueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMSubIssueTableViewCell.m; sourceTree = "<group>"; };
+		EDC903C41CC08BBE00776DCD /* SIMMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIMMoreViewController.h; sourceTree = "<group>"; };
+		EDC903C51CC08BBE00776DCD /* SIMMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIMMoreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,8 @@
 		ED70F0311CB3FA1200CE8B55 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				EDC903C41CC08BBE00776DCD /* SIMMoreViewController.h */,
+				EDC903C51CC08BBE00776DCD /* SIMMoreViewController.m */,
 				ED70F0331CB4F58200CE8B55 /* SIMMasterViewController.h */,
 				ED70F0341CB4F58200CE8B55 /* SIMMasterViewController.m */,
 			);
@@ -218,6 +226,8 @@
 			children = (
 				ED9D66771CB7DFDE008C0A64 /* SIMMasterTableViewCell.h */,
 				ED9D66781CB7DFDE008C0A64 /* SIMMasterTableViewCell.m */,
+				EDC903BA1CBF9C0400776DCD /* SIMSubIssueTableViewCell.h */,
+				EDC903BB1CBF9C0400776DCD /* SIMSubIssueTableViewCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -365,6 +375,8 @@
 				ED70F00E1CB3F86F00CE8B55 /* AppDelegate.m in Sources */,
 				ED19471F1CB506CB00ECE72F /* SIMDBHandler.m in Sources */,
 				ED9D66791CB7DFDE008C0A64 /* SIMMasterTableViewCell.m in Sources */,
+				EDC903BC1CBF9C0400776DCD /* SIMSubIssueTableViewCell.m in Sources */,
+				EDC903C61CC08BBE00776DCD /* SIMMoreViewController.m in Sources */,
 				ED19472C1CB5323F00ECE72F /* SIMMasterDelegate.m in Sources */,
 				ED70F00B1CB3F86F00CE8B55 /* main.m in Sources */,
 			);
@@ -499,6 +511,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -513,6 +526,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

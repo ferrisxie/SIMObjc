@@ -38,5 +38,6 @@ typedef void(^SIMDBQueryComletionHandler)(NSArray* data,BOOL success,NSError* er
 - (void)loadDataSouceFromService;
 
 - (void)queryDataSourceFromDBWithComletionHandler:(SIMDBQueryComletionHandler)handler;
+- (void)deleteDBData;
 
 @end

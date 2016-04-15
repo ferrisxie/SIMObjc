@@ -63,7 +63,7 @@
 #define mainTintColor  [UIColor colorWithRed:0.267 green:0.765 blue:0.933 alpha:1.000]
 #define mainBarColor  [UIColor colorWithRed:0.000 green:0.558 blue:0.747 alpha:1.000]
 #define mainButtonColor  [UIColor colorWithRed:0.933 green:0.235 blue:0.000 alpha:1.000]
-#define mainFont [UIFont fontWithName:@"AppleSDGothicNeo-UltraLight" size:0.0]
+#define mainFont [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:10.0]
 
-#define serviceAddress @"http://0.0.0.0:5000/objc"
+#define serviceAddress @"http://objc.xferris.me/objc"
 #endif
