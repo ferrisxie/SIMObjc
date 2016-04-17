@@ -203,9 +203,9 @@
 				ED1947201CB5104F00ECE72F /* SIMNetworkHandler.h */,
 				ED1947211CB5104F00ECE72F /* SIMNetworkHandler.m */,
 				ED1947231CB5110C00ECE72F /* SIMMasterIssueModel.h */,
+				ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */,
 				ED7BE0921CB64A660025DB30 /* SIMSubIssueModel.h */,
 				ED7BE0931CB64A660025DB30 /* SIMSubIssueModel.m */,
-				ED1947241CB5110C00ECE72F /* SIMMasterIssueModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -244,6 +244,7 @@
 				ED70F0021CB3F86F00CE8B55 /* Frameworks */,
 				ED70F0031CB3F86F00CE8B55 /* Resources */,
 				30862A12B1ED41A6ED250A4F /* Copy Pods Resources */,
+				B78CDE27B5191C86F0A17251 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +359,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B78CDE27B5191C86F0A17251 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

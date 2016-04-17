@@ -79,17 +79,17 @@
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
     if ([cell.textLabel.text isEqualToString:@"查阅作者博客"]) {
-        JBWebViewController* webViewController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://xferris.me"] mode:JBWebViewTitleModeNative];
+        JBWebViewController* webViewController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:@"http://xferris.me"]];
         [webViewController setWebTitle:@"风雅颂"];
         [webViewController setLoadingString:@"加载中..."];
-        [webViewController showFromNavigationController:self.navigationController];
+        [webViewController showFromController:self.navigationController];
     }
     else if([cell.textLabel.text isEqualToString:@"英文原版"])
     {
-        JBWebViewController* webViewController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:@"https://www.objc.io"] mode:JBWebViewTitleModeNative];
+        JBWebViewController* webViewController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:@"https://www.objc.io"]];
         [webViewController setWebTitle:@"objc.io"];
         [webViewController setLoadingString:@"loading"];
-        [webViewController showFromNavigationController:self.navigationController];
+        [webViewController showFromController:self.navigationController];
     }
     else if ([cell.textLabel.text isEqualToString:@"重新获取数据"])
     {
