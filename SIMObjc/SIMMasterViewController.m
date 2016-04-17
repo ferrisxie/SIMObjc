@@ -45,10 +45,10 @@
         masterDelegate = [[SIMMasterDelegate alloc] initWithDataSouce:data SelectedHandler:^(UITableView *tableView, NSIndexPath *indexPath) {
             SIMSubIssueTableViewCell* cell = (SIMSubIssueTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
             SIMSubIssueModel* subModel = cell.subModel;
-            JBWebViewController* webController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:subModel.url] mode:JBWebViewTitleModeNative];
+            JBWebViewController* webController = [[JBWebViewController alloc] initWithUrl:[NSURL URLWithString:subModel.url]];
             [webController setWebTitle:subModel.name];
             [webController setLoadingString:subModel.name];
-            [webController showFromNavigationController:self.navigationController];
+            [webController showFromController:self.navigationController];
         }];
                 
         [self.tableView reloadData];
