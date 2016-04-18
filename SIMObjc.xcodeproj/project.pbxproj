@@ -283,6 +283,7 @@
 				TargetAttributes = {
 					ED70F0041CB3F86F00CE8B55 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 57EP4P69NV;
 					};
 					ED70F01D1CB3F86F00CE8B55 = {
 						CreatedOnToolsVersion = 6.4;
@@ -505,12 +506,15 @@
 			baseConfigurationReference = 9E9CE38E73A224D506DC4F4F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ferris Xie (57EP4P69NV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ferris Xie (57EP4P69NV)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "312793bb-9bb4-4bca-b77a-599e88b9745a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -520,12 +524,15 @@
 			baseConfigurationReference = C5C6635883309D0621E14B4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ferris Xie (57EP4P69NV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ferris Xie (57EP4P69NV)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIMObjc/PrefixHeader.pch;
 				INFOPLIST_FILE = SIMObjc/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "312793bb-9bb4-4bca-b77a-599e88b9745a";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

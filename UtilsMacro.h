@@ -20,13 +20,7 @@
 #define HEXCOLOR(c)                         [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 // RGB颜色转换（16进制->10进制）
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-//core data
-#define CoreDataContactEntityName @"Contact"
-#define CoreDataSelfEntityName @"LocalUser"
-#define CoreDataKeyRemark @"remark"
-#define CoreDataKeyName @"name"
-#define CoreDataKeyPhoneNum @"phoneNum"
-#define CoreDataKeyStatus @"status"
+
 #define CoreDataKeyChangeDate @"changeDate"
 #define mainThemeColor  [UIColor colorWithRed:98.0f/255.0f green:173.0f/255.0f blue:237.0f/255.0f alpha:1.0f]
 

@@ -18,7 +18,6 @@
 
 #pragma mark - application cycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     SIMMasterViewController* masterController = [SIMMasterViewController new];
     
@@ -39,12 +38,10 @@
     NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
    if (![[userDefault objectForKey:@"firstFlag"] boolValue]) {
         //是第一次 执行初始化操作
-        MBProgressHUD* progress = [[MBProgressHUD alloc] initWithWindow:self.window];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            progress.labelFont = mainFont;
+        MBProgressHUD* progress = [MBProgressHUD showHUDAddedTo:masterController.view animated:YES];
+            progress.labelFont = [mainFont fontWithSize:15.0f];
             progress.labelText = @"初始化...";
             [progress show:YES];
-        });
         [[SIMDBHandler shareDBHandler] createTableOnFirstLoadWithComletitionHandler:^(BOOL success, NSError *error) {
             if (success) {
                 [progress hide:YES];
