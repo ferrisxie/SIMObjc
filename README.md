@@ -1,3 +1,5 @@
+> 已上架AppStore，应用商店里搜索 objc.io 即可。  
+
 ####安装Install
 - 第一步
 ```
